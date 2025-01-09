@@ -11,6 +11,9 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        gold: "#fdbe2c",
+        "ad-white": "#f8efdb",
+        "ad-text-primary": "#191919",
       },
     },
   },
