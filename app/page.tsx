@@ -3,7 +3,9 @@ import saveMoney from "../public/amico.svg";
 import Button from "./_components/button";
 import { Lexend } from "next/font/google";
 
-const lexendFont = Lexend();
+const lexendFont = Lexend({
+  subsets: ["latin"],
+});
 
 export default function Home() {
   return (
