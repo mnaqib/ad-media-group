@@ -1,11 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "./_components/header";
-import { Afacad } from "next/font/google";
-
-const font = Afacad({
-  subsets: ["latin"],
-});
+import { afcand } from "./_constants";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -19,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={font.className}>
+      <body className={afcand.className}>
         <Header />
         {children}
       </body>
