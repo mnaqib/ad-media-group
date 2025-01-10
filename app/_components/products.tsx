@@ -35,8 +35,10 @@ const cardList: ICardProps[] = [
 
 export default function Products() {
   return (
-    <div className="mt-16 flex flex-col items-center gap-8">
-      <h4 className={`${lexendFont.className} text-lg font-medium text-white`}>
+    <div className="mt-16 flex flex-col items-center gap-6 lg:gap-10">
+      <h4
+        className={`${lexendFont.className} text-lg lg:text-[2.5rem] lg:leading-[3.75rem] font-medium text-white`}
+      >
         PRODUCTS
       </h4>
       <div className="relative grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">

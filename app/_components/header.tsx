@@ -10,7 +10,10 @@ export default function Header() {
         href="https://chat.whatsapp.com/HEQgyili7KaJmhNRCP3PFA"
         target="_blank"
       >
-        <Button name="Contact Us" className="w-28 h-10 py-2 px-4" />
+        <Button
+          name="Contact Us"
+          className="w-28 lg:w-32 h-10 py-2 px-4 lg:text-base"
+        />
       </a>
     </div>
   );
