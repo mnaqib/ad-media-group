@@ -32,10 +32,11 @@ export default function Home() {
           <a
             href="https://chat.whatsapp.com/HEQgyili7KaJmhNRCP3PFA"
             target="_blank"
+            className="self-center"
           >
             <Button
               name="Join our whatsapp group"
-              className="w-56 h-10 py-4 px-6 self-center"
+              className="w-56 h-10 py-4 px-6"
             />
           </a>
         </div>
