@@ -1,8 +1,13 @@
 import Image from "next/image";
-import saveMoney from "../public/amico.svg";
 import Button from "./_components/button";
 import Services from "./_components/services";
 import { lexendFont } from "./_constants";
+
+// images
+import saveMoney from "../public/amico.svg";
+import adHelp from "../public/what-we-do.svg";
+import Footer from "./_components/footer";
+import Products from "./_components/products";
 
 export default function Home() {
   return (
@@ -24,14 +29,40 @@ export default function Home() {
             for you or your family, we have got something special to offer.
             Let’s work together to make your future brighter.
           </p>
-          <Button
-            name="Join our whatsapp group"
-            className="w-56 h-10 py-4 px-6 self-center"
-          />
+          <a
+            href="https://chat.whatsapp.com/HEQgyili7KaJmhNRCP3PFA"
+            target="_blank"
+          >
+            <Button
+              name="Join our whatsapp group"
+              className="w-56 h-10 py-4 px-6 self-center"
+            />
+          </a>
         </div>
         <Image src={saveMoney} alt="save-money" className="w-72" />
       </div>
       <Services />
+      <Products />
+      <div className="mt-16 flex flex-col items-center gap-6">
+        <h4
+          className={`${lexendFont.className} text-lg font-medium text-white`}
+        >
+          WHAT WE DO ?
+        </h4>
+        <div className="flex flex-col-reverse lg:flex-row items-center gap-8 px-8">
+          <p className="text-center lg:text-left text-sm text-white font-light lg:max-w-[35rem]">
+            AD group established in 2023, is a customer focused organisation
+            designed to support various schemes & savings. We serve across
+            Dakshina Kannada and Udupi districts and cater to the needs of both
+            youth and families.
+            <br /> We strive to provide top notch services and are dedicated to
+            building long term relationships with our cutomers. Our team is
+            always ready to assist you in navigating the savings plan process.
+          </p>
+          <Image src={adHelp} alt="what-we-do" className="w-64 rounded-2xl" />
+        </div>
+      </div>
+      <Footer />
     </div>
   );
 }

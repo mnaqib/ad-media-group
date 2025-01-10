@@ -34,7 +34,7 @@ export default function Services() {
       <h4 className={`${lexendFont.className} text-lg font-medium text-white`}>
         SERVICES
       </h4>
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col lg:flex-row gap-4 lg:gap-6">
         {cardList.map((props) => (
           <Card key={"#" + props.name} {...props} />
         ))}
@@ -45,19 +45,24 @@ export default function Services() {
 
 function Card({ name, logo }: ICardProps) {
   return (
-    <div className="flex bg-ad-white px-2 py-4 rounded-3xl font-medium text-ad-text-primary gap-4 items-center">
+    <div className="flex flex-row lg:flex-col bg-ad-white px-2 py-4 rounded-3xl font-medium text-ad-text-primary gap-4 items-center">
       <Image
         src={logo}
         alt={name}
-        className="h-28 w-40 rounded-2xl object-cover"
+        className="h-28 lg:h-60 w-40 lg:w-80 rounded-2xl object-cover"
       />
       <div className="flex flex-col gap-2 px-6 items-center">
         <h4 className="text-base">{name}</h4>
-        <Button
-          name="Know more"
-          className="py-2 px-4 gap-2"
-          logo={<Image src={whatsapp} alt="whatsapp-icon" />}
-        />
+        <a
+          href="https://chat.whatsapp.com/HEQgyili7KaJmhNRCP3PFA"
+          target="_blank"
+        >
+          <Button
+            name="Know more"
+            className="py-2 px-4 gap-2"
+            logo={<Image src={whatsapp} alt="whatsapp-icon" />}
+          />
+        </a>
       </div>
     </div>
   );
